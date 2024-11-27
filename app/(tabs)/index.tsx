@@ -8,7 +8,7 @@ export default function HomeScreen() {
   const [search, setSearch] = useState("");
   async function shareImage() {
     await Share.share({
-      message: "Sharing Image from browser",
+      message: "Sending AI Generated QR Code",
       url: `https://api.qrserver.com/v1/create-qr-code/?data=${search}&size=512x512%22`,
     });
   }
